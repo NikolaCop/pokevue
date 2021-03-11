@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid" id="bg">
-    <div class="col">
+    <div class="col m-2">
       <router-link :to="{name:'PokemonDetails', params: {name: pokemon.name}}">
-        <li class="pokemon">
+        <span class="badge badge-dark p-1"><li class="pokemon ">
           <h1 id="words" @click="setActivePokemon(pokemon.name)">
             {{ pokemon.name }}
           </h1>
-        </li>
+        </li></span>
       </router-link>
     </div>
   </div>

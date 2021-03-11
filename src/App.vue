@@ -2,7 +2,7 @@
   <header>
     <Navbar />
   </header>
-  <main>
+  <main class="background-image">
     <router-view v-slot="{Component}">
       <transition name="route" mode="out-in">
         <component :is="Component" />
@@ -30,5 +30,9 @@ export default {
 </script>
 <style lang="scss">
 @import "./assets/scss/main.scss";
+.background-image{
+  background-image: url('https://i.gifer.com/ByMn.gif');
+  background-size: cover;
+}
 
 </style>
